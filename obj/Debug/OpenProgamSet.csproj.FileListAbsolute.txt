@@ -1,0 +1,13 @@
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\OpenProgamSet.exe.config
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\OpenProgamSet.exe
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\OpenProgamSet.pdb
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.csprojAssemblyReference.cache
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.Form1.resources
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.Properties.Resources.resources
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.csproj.GenerateResource.cache
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.exe
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.pdb
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.PCC.resources
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.csproj.CopyComplete
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.Form3.resources
