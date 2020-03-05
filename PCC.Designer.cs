@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.ExitPCC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Calucator)).BeginInit();
             this.panel1.SuspendLayout();
@@ -115,12 +116,27 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // ExitPCC
+            // 
+            this.ExitPCC.AccessibleName = "";
+            this.ExitPCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitPCC.BackgroundImage")));
+            this.ExitPCC.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitPCC.ForeColor = System.Drawing.SystemColors.Control;
+            this.ExitPCC.Location = new System.Drawing.Point(762, 493);
+            this.ExitPCC.Name = "ExitPCC";
+            this.ExitPCC.Size = new System.Drawing.Size(72, 48);
+            this.ExitPCC.TabIndex = 6;
+            this.ExitPCC.Text = "EXIT";
+            this.ExitPCC.UseVisualStyleBackColor = true;
+            this.ExitPCC.Click += new System.EventHandler(this.ExitPCC_Click);
+            // 
             // PCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(51)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(851, 551);
+            this.Controls.Add(this.ExitPCC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Calucator);
@@ -144,5 +160,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ExitPCC;
     }
 }

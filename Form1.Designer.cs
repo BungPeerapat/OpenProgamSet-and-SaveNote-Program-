@@ -54,7 +54,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.inputemail = new System.Windows.Forms.TextBox();
+            this.Emailtext = new System.Windows.Forms.TextBox();
+            this.ExitPCC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -339,6 +340,8 @@
             this.textBox5.Size = new System.Drawing.Size(194, 37);
             this.textBox5.TabIndex = 2;
             this.textBox5.TabStop = false;
+            this.textBox5.UseSystemPasswordChar = true;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label3
             // 
@@ -354,28 +357,42 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.inputemail);
+            this.panel6.Controls.Add(this.Emailtext);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Location = new System.Drawing.Point(147, 417);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(381, 40);
             this.panel6.TabIndex = 13;
             // 
-            // inputemail
+            // Emailtext
             // 
-            this.inputemail.AccessibleName = "Usernametext";
-            this.inputemail.BackColor = System.Drawing.SystemColors.MenuText;
-            this.inputemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputemail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputemail.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputemail.ForeColor = System.Drawing.SystemColors.Window;
-            this.inputemail.HideSelection = false;
-            this.inputemail.Location = new System.Drawing.Point(103, 0);
-            this.inputemail.Name = "inputemail";
-            this.inputemail.Size = new System.Drawing.Size(271, 37);
-            this.inputemail.TabIndex = 2;
-            this.inputemail.TabStop = false;
-            this.inputemail.TextChanged += new System.EventHandler(this.inputemail_TextChanged);
+            this.Emailtext.AccessibleName = "Usernametext";
+            this.Emailtext.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Emailtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Emailtext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Emailtext.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Emailtext.ForeColor = System.Drawing.SystemColors.Window;
+            this.Emailtext.HideSelection = false;
+            this.Emailtext.Location = new System.Drawing.Point(116, 0);
+            this.Emailtext.Name = "Emailtext";
+            this.Emailtext.Size = new System.Drawing.Size(258, 37);
+            this.Emailtext.TabIndex = 2;
+            this.Emailtext.TabStop = false;
+            this.Emailtext.TextChanged += new System.EventHandler(this.inputemail_TextChanged);
+            // 
+            // ExitPCC
+            // 
+            this.ExitPCC.AccessibleName = "";
+            this.ExitPCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitPCC.BackgroundImage")));
+            this.ExitPCC.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitPCC.ForeColor = System.Drawing.SystemColors.Control;
+            this.ExitPCC.Location = new System.Drawing.Point(497, 727);
+            this.ExitPCC.Name = "ExitPCC";
+            this.ExitPCC.Size = new System.Drawing.Size(72, 48);
+            this.ExitPCC.TabIndex = 14;
+            this.ExitPCC.Text = "EXIT";
+            this.ExitPCC.UseVisualStyleBackColor = true;
+            this.ExitPCC.Click += new System.EventHandler(this.ExitPCC_Click);
             // 
             // Form1
             // 
@@ -383,6 +400,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(581, 787);
+            this.Controls.Add(this.ExitPCC);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.ETEXT);
@@ -453,7 +471,8 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox inputemail;
+        private System.Windows.Forms.TextBox Emailtext;
+        private System.Windows.Forms.Button ExitPCC;
     }
 }
 

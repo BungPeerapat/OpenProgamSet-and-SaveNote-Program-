@@ -70,5 +70,12 @@ namespace OpenProgamSet
             Console.WriteLine(cmd.StandardOutput.ReadToEnd());
 
         }
+
+        private void ExitPCC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 OpenForm1 = new Form1();
+            OpenForm1.Show();
+        }
     }
 }

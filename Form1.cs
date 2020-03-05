@@ -33,9 +33,9 @@ namespace OpenProgamSet
         private void Passtext_TextChanged(object sender, EventArgs e)
         {
                 Passtext.PasswordChar = '*';
-                inputemail.BackgroundImage = Properties.Resources.Login;
+                Emailtext.BackgroundImage = Properties.Resources.Login;
                 panel1.ForeColor = Color.FromArgb(0, 255, 0);
-                inputemail.ForeColor = Color.FromArgb(0, 255, 0);
+                Emailtext.ForeColor = Color.FromArgb(0, 255, 0);
         }
         private void ETEXT_TextChanged(object sender, EventArgs e)
         {
@@ -46,23 +46,11 @@ namespace OpenProgamSet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "AdminCode") //ADMIN USER ONLY
+            if (textBox1.Text == "AdminCode" && textBox5.Text == "74122541" && Emailtext.Text == "Mashiro74122541@gmail.com") //ADMIN USER ONLY
             {
-                if (Passtext.Text == "74122541")
-                {
-                    if (inputemail.Text == "Mashiro74122541@gmail.com")
-                    {
-                        PCC OpenPCC = new PCC();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Wrong Username or Password");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Wrong Username or Password");
-                }
+                PCC OpenPCC = new PCC();
+                OpenPCC.Show();
+                this.Hide();
             }
             else
             {
@@ -93,6 +81,26 @@ namespace OpenProgamSet
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/BungJuChicken?tab=repositories");
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitPCC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (Process proc in Process.GetProcessesByName("Form1.exe"))
+                {
+                    proc.Kill();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
