@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace OpenProgamSet
 {
@@ -45,24 +46,53 @@ namespace OpenProgamSet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-                if (textBox1.Text == "AdminCode")
+            if (textBox1.Text == "AdminCode") //ADMIN USER ONLY
+            {
+                if (Passtext.Text == "74122541")
                 {
-                    PCC OpenPCC = new PCC();
-                    if else (Passtext.Text == "74122541")
+                    if (inputemail.Text == "Mashiro74122541@gmail.com")
                     {
-                    MessageBox.Show("Wrong Username or Password");
+                        PCC OpenPCC = new PCC();
                     }
-                    if else (inputemail.Text == Mashiro74122541@gmail.com)
+                    else
+                    {
+                        MessageBox.Show("Wrong Username or Password");
+                    }
                 }
                 else
                 {
                     MessageBox.Show("Wrong Username or Password");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Wrong Username or Password");
+            }
         }
 
         private void inputemail_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://mail.google.com/mail/u/0/?tab=wm1#inbox");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/BungJuChicken?tab=repositories");
         }
     }
 }
