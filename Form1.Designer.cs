@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -51,6 +49,12 @@
             this.ETEXT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.inputemail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,20 +84,6 @@
             this.textBox1.TabStop = false;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // textBox2
-            // 
-            this.textBox2.AccessibleName = "Passwordtext";
-            this.textBox2.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.HideSelection = false;
-            this.textBox2.Location = new System.Drawing.Point(144, 335);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(386, 44);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "PASSWORD : ";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -107,20 +99,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(384, 10);
             this.panel2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.AccessibleName = "Emailtext";
-            this.textBox3.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.HideSelection = false;
-            this.textBox3.Location = new System.Drawing.Point(142, 426);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(386, 44);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.TabStop = false;
-            this.textBox3.Text = "EMAIL          : ";
             // 
             // panel3
             // 
@@ -306,7 +284,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(150, 253);
+            this.label1.Location = new System.Drawing.Point(1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 31);
             this.label1.TabIndex = 9;
@@ -316,10 +294,84 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(147, 251);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(381, 40);
             this.panel4.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(-1, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 31);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "PASSWORD :";
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Location = new System.Drawing.Point(147, 332);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(381, 40);
+            this.panel5.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            this.textBox5.AccessibleName = "Usernametext";
+            this.textBox5.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox5.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox5.HideSelection = false;
+            this.textBox5.Location = new System.Drawing.Point(180, 0);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(194, 37);
+            this.textBox5.TabIndex = 2;
+            this.textBox5.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 31);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "EMAIL : ";
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.inputemail);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(147, 417);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(381, 40);
+            this.panel6.TabIndex = 13;
+            // 
+            // inputemail
+            // 
+            this.inputemail.AccessibleName = "Usernametext";
+            this.inputemail.BackColor = System.Drawing.SystemColors.MenuText;
+            this.inputemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputemail.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputemail.ForeColor = System.Drawing.SystemColors.Window;
+            this.inputemail.HideSelection = false;
+            this.inputemail.Location = new System.Drawing.Point(103, 0);
+            this.inputemail.Name = "inputemail";
+            this.inputemail.Size = new System.Drawing.Size(271, 37);
+            this.inputemail.TabIndex = 2;
+            this.inputemail.TabStop = false;
+            this.inputemail.TextChanged += new System.EventHandler(this.inputemail_TextChanged);
             // 
             // Form1
             // 
@@ -327,7 +379,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(581, 787);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.ETEXT);
             this.Controls.Add(this.Passtext);
             this.Controls.Add(this.textBox4);
@@ -340,8 +393,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -362,6 +413,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,12 +427,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
@@ -391,6 +444,12 @@
         private System.Windows.Forms.TextBox ETEXT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox inputemail;
     }
 }
 

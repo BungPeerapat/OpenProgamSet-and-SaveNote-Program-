@@ -32,9 +32,9 @@ namespace OpenProgamSet
         private void Passtext_TextChanged(object sender, EventArgs e)
         {
                 Passtext.PasswordChar = '*';
-                textBox2.BackgroundImage = Properties.Resources.Login;
+                inputemail.BackgroundImage = Properties.Resources.Login;
                 panel1.ForeColor = Color.FromArgb(0, 255, 0);
-                textBox2.ForeColor = Color.FromArgb(0, 255, 0);
+                inputemail.ForeColor = Color.FromArgb(0, 255, 0);
         }
         private void ETEXT_TextChanged(object sender, EventArgs e)
         {
@@ -45,12 +45,24 @@ namespace OpenProgamSet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            PCC OpenPCC = new PCC();
-            if (Passtext.Text == "74122541")
-            {
-                OpenPCC.Show();
-                this.Hide();
-            }
+                if (textBox1.Text == "AdminCode")
+                {
+                    PCC OpenPCC = new PCC();
+                    if else (Passtext.Text == "74122541")
+                    {
+                    MessageBox.Show("Wrong Username or Password");
+                    }
+                    if else (inputemail.Text == Mashiro74122541@gmail.com)
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Username or Password");
+                }
+        }
+
+        private void inputemail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
