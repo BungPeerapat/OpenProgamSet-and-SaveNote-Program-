@@ -45,7 +45,7 @@ namespace OpenProgamSet
             ProcessStartInfo DragonCenter = new ProcessStartInfo();
             /////////////////////// Start Program \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
             Steam.FileName = @"E:\Program Files (x86)\Steam\Steam.exe";
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\BungK\Desktop\Roblox\fahsai_hallo.mp3");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Soundfahsai_hallo.mp3");
             player.Play();
             /////////////////////// Open Program \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
             System.Diagnostics.Process.Start("https://www.facebook.com/");
@@ -76,6 +76,13 @@ namespace OpenProgamSet
             this.Hide();
             Form1 OpenForm1 = new Form1();
             OpenForm1.Show();
+        }
+private void button3_Click(object sender, EventArgs e)
+        {
+            WMPLib.WindowsMediaPlayer mp3play;
+            WMPLib.WindowsMediaPlayer mp3play = new WMPLib.WindowsMediaPlayer();
+            mp3play.URL = "fahsai_hallo.mp3";
+            mp3play.Controls.Play();
         }
     }
 }

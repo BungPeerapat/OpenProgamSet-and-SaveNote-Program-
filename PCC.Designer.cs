@@ -36,6 +36,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.ExitPCC = new System.Windows.Forms.Button();
+            this.PCCUSERNAMESHOW = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Calucator)).BeginInit();
             this.panel1.SuspendLayout();
@@ -84,6 +86,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.PCCUSERNAMESHOW);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -94,6 +97,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(0, 132);
@@ -130,6 +134,32 @@
             this.ExitPCC.UseVisualStyleBackColor = true;
             this.ExitPCC.Click += new System.EventHandler(this.ExitPCC_Click);
             // 
+            // PCCUSERNAMESHOW
+            // 
+            this.PCCUSERNAMESHOW.AutoSize = true;
+            this.PCCUSERNAMESHOW.Font = new System.Drawing.Font("Impact", 24F);
+            this.PCCUSERNAMESHOW.ForeColor = System.Drawing.SystemColors.Control;
+            this.PCCUSERNAMESHOW.Location = new System.Drawing.Point(28, 40);
+            this.PCCUSERNAMESHOW.Name = "PCCUSERNAMESHOW";
+            this.PCCUSERNAMESHOW.Size = new System.Drawing.Size(207, 48);
+            this.PCCUSERNAMESHOW.TabIndex = 1;
+            this.PCCUSERNAMESHOW.Text = "AdminCode";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Impact", 24F);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(3, 170);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(265, 55);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "TEST";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // PCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,6 +177,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Calucator)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -161,5 +192,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button ExitPCC;
+        private System.Windows.Forms.Label PCCUSERNAMESHOW;
+        private System.Windows.Forms.Button button3;
     }
 }

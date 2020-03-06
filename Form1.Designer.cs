@@ -244,7 +244,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(289, 22);
             this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "LOGIN WITH";
+            this.textBox4.Text = "ADMIN USER DATA";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox21
