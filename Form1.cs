@@ -90,17 +90,7 @@ namespace OpenProgamSet
 
         private void ExitPCC_Click(object sender, EventArgs e)
         {
-            try
-            {
-                foreach (Process proc in Process.GetProcessesByName("Form1.exe"))
-                {
-                    proc.Kill();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+         this.Close();
         }
     }
 }

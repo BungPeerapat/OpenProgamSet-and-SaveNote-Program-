@@ -77,12 +77,33 @@ namespace OpenProgamSet
             Form1 OpenForm1 = new Form1();
             OpenForm1.Show();
         }
-private void button3_Click(object sender, EventArgs e)
+
+        WMPLib.WindowsMediaPlayer Player;
+        private void PlayFile(String url)
         {
-            WMPLib.WindowsMediaPlayer mp3play;
-            WMPLib.WindowsMediaPlayer mp3play = new WMPLib.WindowsMediaPlayer();
-            mp3play.URL = "fahsai_hallo.mp3";
-            mp3play.Controls.Play();
+            Player = new WMPLib.WindowsMediaPlayer();
+            Player.PlayStateChange +=
+                new WMPLib._WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
+            Player.MediaError +=
+                new WMPLib._WMPOCXEvents_MediaErrorEventHandler(Player_MediaError);
+            Player.URL = url;
+            Player.controls.play();
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PlayFile(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Sound\TestFile.wma");
+        }
+        private void Player_PlayStateChange(int NewState)
+        {
+            if ((WMPLib.WMPPlayState)NewState == WMPLib.WMPPlayState.wmppsStopped)
+            {
+
+            }
+        }
+        private void Player_MediaError(object pMediaObject)
+        {
+            MessageBox.Show("Cannot play media file.");
+        }
+
     }
 }

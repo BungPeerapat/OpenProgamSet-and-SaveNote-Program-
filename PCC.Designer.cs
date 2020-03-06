@@ -33,11 +33,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Calucator = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PCCUSERNAMESHOW = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ExitPCC = new System.Windows.Forms.Button();
-            this.PCCUSERNAMESHOW = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Calucator)).BeginInit();
             this.panel1.SuspendLayout();
@@ -94,6 +94,17 @@
             this.panel1.Size = new System.Drawing.Size(855, 136);
             this.panel1.TabIndex = 5;
             // 
+            // PCCUSERNAMESHOW
+            // 
+            this.PCCUSERNAMESHOW.AutoSize = true;
+            this.PCCUSERNAMESHOW.Font = new System.Drawing.Font("Impact", 24F);
+            this.PCCUSERNAMESHOW.ForeColor = System.Drawing.SystemColors.Control;
+            this.PCCUSERNAMESHOW.Location = new System.Drawing.Point(28, 40);
+            this.PCCUSERNAMESHOW.Name = "PCCUSERNAMESHOW";
+            this.PCCUSERNAMESHOW.Size = new System.Drawing.Size(207, 48);
+            this.PCCUSERNAMESHOW.TabIndex = 1;
+            this.PCCUSERNAMESHOW.Text = "AdminCode";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -104,6 +115,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 421);
             this.panel2.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Impact", 24F);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(3, 170);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(265, 55);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "TEST";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -133,32 +159,6 @@
             this.ExitPCC.Text = "EXIT";
             this.ExitPCC.UseVisualStyleBackColor = true;
             this.ExitPCC.Click += new System.EventHandler(this.ExitPCC_Click);
-            // 
-            // PCCUSERNAMESHOW
-            // 
-            this.PCCUSERNAMESHOW.AutoSize = true;
-            this.PCCUSERNAMESHOW.Font = new System.Drawing.Font("Impact", 24F);
-            this.PCCUSERNAMESHOW.ForeColor = System.Drawing.SystemColors.Control;
-            this.PCCUSERNAMESHOW.Location = new System.Drawing.Point(28, 40);
-            this.PCCUSERNAMESHOW.Name = "PCCUSERNAMESHOW";
-            this.PCCUSERNAMESHOW.Size = new System.Drawing.Size(207, 48);
-            this.PCCUSERNAMESHOW.TabIndex = 1;
-            this.PCCUSERNAMESHOW.Text = "AdminCode";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Impact", 24F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(3, 170);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(265, 55);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "TEST";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // PCC
             // 
