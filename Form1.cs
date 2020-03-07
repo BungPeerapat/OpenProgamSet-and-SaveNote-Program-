@@ -29,7 +29,7 @@ namespace OpenProgamSet
             panel1.ForeColor = Color.FromArgb(0, 255, 0);
             if (Usernametext.Text == "AdminCode")
             {
-                Usernametext.ForeColor = Color.FromArgb(128, 0, 0);
+                Usernametext.ForeColor = Color.FromArgb(0, 255, 0);
             }
         }
 
@@ -65,7 +65,7 @@ namespace OpenProgamSet
         {
             if (Emailtext.Text == "Mashiro74122541@gmail.com")
             {
-                Emailtext.ForeColor = Color.FromArgb(128, 0, 0);
+                Emailtext.ForeColor = Color.FromArgb(0, 255, 0);
             }
         }
 
@@ -93,7 +93,7 @@ namespace OpenProgamSet
         {
             if (Passwordtext.Text == "74122541")
             {
-                Passwordtext.ForeColor = Color.FromArgb(128, 0, 0);
+                Passwordtext.ForeColor = Color.FromArgb(0, 255, 0);
             }
         }
 
