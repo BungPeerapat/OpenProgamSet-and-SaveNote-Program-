@@ -244,7 +244,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(289, 22);
             this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "ADMIN USER DATA";
+            this.textBox4.Text = "ADMIN CODE DATA";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox21
@@ -310,11 +310,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(-1, 1);
+            this.label2.Location = new System.Drawing.Point(6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 31);
             this.label2.TabIndex = 11;
             this.label2.Text = "PASSWORD :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel5
             // 
@@ -347,7 +348,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 5);
+            this.label3.Location = new System.Drawing.Point(6, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 31);
             this.label3.TabIndex = 12;
@@ -372,9 +373,9 @@
             this.Emailtext.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Emailtext.ForeColor = System.Drawing.SystemColors.Window;
             this.Emailtext.HideSelection = false;
-            this.Emailtext.Location = new System.Drawing.Point(116, 0);
+            this.Emailtext.Location = new System.Drawing.Point(117, 0);
             this.Emailtext.Name = "Emailtext";
-            this.Emailtext.Size = new System.Drawing.Size(258, 37);
+            this.Emailtext.Size = new System.Drawing.Size(257, 37);
             this.Emailtext.TabIndex = 2;
             this.Emailtext.TextChanged += new System.EventHandler(this.inputemail_TextChanged);
             // 
