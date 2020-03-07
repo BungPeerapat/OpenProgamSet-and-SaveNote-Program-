@@ -16,6 +16,7 @@ namespace OpenProgamSet
         public PCC()
         {
             InitializeComponent();
+            PlayFile(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Sound\Loading Sound.wma");
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace OpenProgamSet
 
         private void ExitPCC_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Form1 OpenForm1 = new Form1();
             OpenForm1.Show();
         }
@@ -88,6 +89,7 @@ namespace OpenProgamSet
                 new WMPLib._WMPOCXEvents_MediaErrorEventHandler(Player_MediaError);
             Player.URL = url;
             Player.controls.play();
+            Player.settings.volume = 20;
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -105,5 +107,9 @@ namespace OpenProgamSet
             MessageBox.Show("Cannot play media file.");
         }
 
+        private void PCC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

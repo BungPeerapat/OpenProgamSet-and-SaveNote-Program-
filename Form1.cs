@@ -25,9 +25,12 @@ namespace OpenProgamSet
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.BackgroundImage = Properties.Resources.Login;
+            Usernametext.BackgroundImage = Properties.Resources.Login;
             panel1.ForeColor = Color.FromArgb(0, 255, 0);
-            textBox1.ForeColor = Color.FromArgb(0, 255, 0);
+            if (Usernametext.Text == "AdminCode")
+            {
+                Usernametext.ForeColor = Color.FromArgb(128, 0, 0);
+            }
         }
 
         private void Passtext_TextChanged(object sender, EventArgs e)
@@ -46,7 +49,7 @@ namespace OpenProgamSet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "AdminCode" && textBox5.Text == "74122541" && Emailtext.Text == "Mashiro74122541@gmail.com") //ADMIN USER ONLY
+            if (Usernametext.Text == "AdminCode" && Passwordtext.Text == "74122541" && Emailtext.Text == "Mashiro74122541@gmail.com") //ADMIN USER ONLY
             {
                 PCC OpenPCC = new PCC();
                 OpenPCC.Show();
@@ -60,7 +63,10 @@ namespace OpenProgamSet
 
         private void inputemail_TextChanged(object sender, EventArgs e)
         {
-
+            if (Emailtext.Text == "Mashiro74122541@gmail.com")
+            {
+                Emailtext.ForeColor = Color.FromArgb(128, 0, 0);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -85,7 +91,10 @@ namespace OpenProgamSet
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
+            if (Passwordtext.Text == "74122541")
+            {
+                Passwordtext.ForeColor = Color.FromArgb(128, 0, 0);
+            }
         }
 
         private void ExitPCC_Click(object sender, EventArgs e)

@@ -10,9 +10,9 @@ C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.PCC.resources
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.csproj.CopyComplete
-C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.Form3.resources
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\Interop.WMPLib.dll
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\Interop.WMPLib.dll
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.csproj.ResolveComReference.cache
+C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\obj\Debug\OpenProgamSet.Client.resources

@@ -119,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Chrisl21-Minecraft-Enderman.ico" />
+    <None Include="Resources\umballa wallpaper.jpg" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

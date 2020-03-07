@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Usernametext = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,7 +37,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -51,7 +51,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Passwordtext = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Emailtext = new System.Windows.Forms.TextBox();
@@ -69,21 +69,20 @@
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Usernametext
             // 
-            this.textBox1.AccessibleName = "Usernametext";
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.HideSelection = false;
-            this.textBox1.Location = new System.Drawing.Point(180, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 37);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TabStop = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.Usernametext.AccessibleName = "Usernametext";
+            this.Usernametext.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Usernametext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Usernametext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Usernametext.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernametext.ForeColor = System.Drawing.SystemColors.Window;
+            this.Usernametext.HideSelection = false;
+            this.Usernametext.Location = new System.Drawing.Point(180, 0);
+            this.Usernametext.Name = "Usernametext";
+            this.Usernametext.Size = new System.Drawing.Size(194, 37);
+            this.Usernametext.TabIndex = 2;
+            this.Usernametext.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // panel1
             // 
@@ -154,20 +153,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // Login
             // 
-            this.button1.AccessibleName = "LOGIN";
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(47, 501);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(483, 43);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Login.AccessibleName = "LOGIN";
+            this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Login.Location = new System.Drawing.Point(47, 501);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(483, 43);
+            this.Login.TabIndex = 4;
+            this.Login.Text = "LOGIN";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button3
             // 
@@ -298,7 +298,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.Usernametext);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(147, 251);
             this.panel4.Name = "panel4";
@@ -319,29 +319,28 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.Passwordtext);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(147, 332);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(381, 40);
             this.panel5.TabIndex = 12;
             // 
-            // textBox5
+            // Passwordtext
             // 
-            this.textBox5.AccessibleName = "Usernametext";
-            this.textBox5.BackColor = System.Drawing.SystemColors.MenuText;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox5.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox5.HideSelection = false;
-            this.textBox5.Location = new System.Drawing.Point(180, 0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 37);
-            this.textBox5.TabIndex = 2;
-            this.textBox5.TabStop = false;
-            this.textBox5.UseSystemPasswordChar = true;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.Passwordtext.AccessibleName = "Usernametext";
+            this.Passwordtext.BackColor = System.Drawing.SystemColors.MenuText;
+            this.Passwordtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Passwordtext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Passwordtext.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passwordtext.ForeColor = System.Drawing.SystemColors.Window;
+            this.Passwordtext.HideSelection = false;
+            this.Passwordtext.Location = new System.Drawing.Point(180, 0);
+            this.Passwordtext.Name = "Passwordtext";
+            this.Passwordtext.Size = new System.Drawing.Size(194, 37);
+            this.Passwordtext.TabIndex = 2;
+            this.Passwordtext.UseSystemPasswordChar = true;
+            this.Passwordtext.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label3
             // 
@@ -377,7 +376,6 @@
             this.Emailtext.Name = "Emailtext";
             this.Emailtext.Size = new System.Drawing.Size(258, 37);
             this.Emailtext.TabIndex = 2;
-            this.Emailtext.TabStop = false;
             this.Emailtext.TextChanged += new System.EventHandler(this.inputemail_TextChanged);
             // 
             // ExitPCC
@@ -399,6 +397,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.CancelButton = this.Login;
             this.ClientSize = new System.Drawing.Size(581, 787);
             this.Controls.Add(this.ExitPCC);
             this.Controls.Add(this.panel6);
@@ -411,7 +410,7 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Login);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -448,13 +447,13 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Usernametext;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -468,7 +467,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Passwordtext;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox Emailtext;

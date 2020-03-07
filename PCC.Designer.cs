@@ -29,32 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PCC));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.Calucator = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PCCUSERNAMESHOW = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ExitPCC = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Calucator)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Calucator = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Calucator)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(680, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -70,18 +58,6 @@
             this.button1.Text = "SERVERPACK";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // Calucator
-            // 
-            this.Calucator.Image = ((System.Drawing.Image)(resources.GetObject("Calucator.Image")));
-            this.Calucator.Location = new System.Drawing.Point(776, 154);
-            this.Calucator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Calucator.Name = "Calucator";
-            this.Calucator.Size = new System.Drawing.Size(59, 57);
-            this.Calucator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Calucator.TabIndex = 3;
-            this.Calucator.TabStop = false;
-            this.Calucator.Click += new System.EventHandler(this.Calucator_Click);
             // 
             // panel1
             // 
@@ -160,6 +136,30 @@
             this.ExitPCC.UseVisualStyleBackColor = true;
             this.ExitPCC.Click += new System.EventHandler(this.ExitPCC_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(680, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Calucator
+            // 
+            this.Calucator.Image = ((System.Drawing.Image)(resources.GetObject("Calucator.Image")));
+            this.Calucator.Location = new System.Drawing.Point(776, 154);
+            this.Calucator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Calucator.Name = "Calucator";
+            this.Calucator.Size = new System.Drawing.Size(59, 57);
+            this.Calucator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Calucator.TabIndex = 3;
+            this.Calucator.TabStop = false;
+            this.Calucator.Click += new System.EventHandler(this.Calucator_Click);
+            // 
             // PCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -174,11 +174,12 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PCC";
             this.Text = "OpenPCC";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Calucator)).EndInit();
+            this.Load += new System.EventHandler(this.PCC_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Calucator)).EndInit();
             this.ResumeLayout(false);
 
         }

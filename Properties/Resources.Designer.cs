@@ -89,5 +89,15 @@ namespace OpenProgamSet.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap umballa_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("umballa wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
