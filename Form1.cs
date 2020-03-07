@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Media;
 
 namespace OpenProgamSet
 {
@@ -30,6 +31,7 @@ namespace OpenProgamSet
             if (Usernametext.Text == "AdminCode")
             {
                 Usernametext.ForeColor = Color.FromArgb(0, 255, 0);
+                Console.Beep();
             }
         }
 
@@ -66,6 +68,7 @@ namespace OpenProgamSet
             if (Emailtext.Text == "Mashiro74122541@gmail.com")
             {
                 Emailtext.ForeColor = Color.FromArgb(0, 255, 0);
+                Console.Beep();
             }
         }
 
@@ -94,6 +97,7 @@ namespace OpenProgamSet
             if (Passwordtext.Text == "74122541")
             {
                 Passwordtext.ForeColor = Color.FromArgb(0, 255, 0);
+                Console.Beep();
             }
         }
 
