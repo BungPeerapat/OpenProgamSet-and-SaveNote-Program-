@@ -81,4 +81,11 @@ namespace OpenProgamSet
             sendDesktop();
         }
     }
+
+    class Form3
+    {
+        public Form3()
+        {
+        }
+    }
 }

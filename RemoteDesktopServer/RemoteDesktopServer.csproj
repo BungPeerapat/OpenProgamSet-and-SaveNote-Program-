@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FB88BF4-9BFB-4B74-8178-A70C4F5A95CD}</ProjectGuid>
+    <ProjectGuid>{FDE972CE-D4E6-421C-B1E8-C7839F14DAD9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OpenProgamSet</RootNamespace>
-    <AssemblyName>OpenProgamSet</AssemblyName>
+    <RootNamespace>RemoteDesktopServer</RootNamespace>
+    <AssemblyName>RemoteDesktopServer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,19 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Chrisl21-Minecraft-Enderman.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Newtool\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Newtool\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,37 +50,23 @@
     <Compile Include="DisplayScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DisplayScreen.Designer.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="DisplayScreen.Designer.cs">
+      <DependentUpon>DisplayScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="NetworkSteam.cs" />
-    <Compile Include="PCC.cs">
+    <Compile Include="RemoteDesktopServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PCC.Designer.cs">
-      <DependentUpon>PCC.cs</DependentUpon>
+    <Compile Include="RemoteDesktopServer.Designer.cs">
+      <DependentUpon>RemoteDesktopServer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DisplayScreen.resx" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="DisplayScreen.resx">
+      <DependentUpon>DisplayScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PCC.resx">
-      <DependentUpon>PCC.cs</DependentUpon>
+    <EmbeddedResource Include="RemoteDesktopServer.resx">
+      <DependentUpon>RemoteDesktopServer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,7 +76,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,38 +90,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Login.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\%25E2%2580%2594Pngtree%25E2%2580%2594flat%2520desktop%2520pc%2520tablet%2520pc_1522235.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_gmail_1220340.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Chrisl21-Minecraft-Enderman.ico" />
-    <None Include="Resources\umballa wallpaper.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="AxWMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="WMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

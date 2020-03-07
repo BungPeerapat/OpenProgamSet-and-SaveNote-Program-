@@ -114,9 +114,13 @@ namespace OpenProgamSet
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form3 OpenForm3 = new Form3();
-            new.Form3.Show();
-            this.Hide();
+            Client OpenForm3 = new Client();
+            OpenForm3.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\RemoteDesktopServer\bin\Debug\RemoteDesktopServer.exe");
         }
     }
 }
