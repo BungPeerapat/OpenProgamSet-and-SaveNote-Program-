@@ -55,7 +55,11 @@ namespace OpenProgamSet
             {
                 client.Connect(IPTEXT.Text, portNumber);
                 MessageBox.Show("Conneted!");
-            }catch(Exception ex)
+                Console.Beep();
+                Console.Beep();
+                Console.Beep();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -79,6 +83,11 @@ namespace OpenProgamSet
         private void timer1_Tick(object sender, EventArgs e)
         {
             sendDesktop();
+        }
+
+        private void Client_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

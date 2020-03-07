@@ -116,9 +116,10 @@
             this.Controls.Add(this.IP);
             this.Controls.Add(this.IPTEXT);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Client";
             this.Text = "Remote Client";
+            this.Load += new System.EventHandler(this.Client_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
