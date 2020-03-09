@@ -120,7 +120,7 @@ namespace OpenProgamSet
 
         private void button5_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\RemoteDesktopServer\bin\Debug\RemoteDesktopServer.exe");
+            System.Diagnostics.Process.Start(@"C:\Users\BungK\source\repos\OpenProgamSet\RemoteDesktopServer\bin\Debug\RemoteDesktopServer.exe");
         }
     }
 }
