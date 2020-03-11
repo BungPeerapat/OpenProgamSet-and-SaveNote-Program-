@@ -109,7 +109,7 @@ namespace OpenProgamSet
 
         private void PCC_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button4_Click(object sender, EventArgs e)

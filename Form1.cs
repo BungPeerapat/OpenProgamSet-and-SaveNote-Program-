@@ -8,12 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using System.Media;
+using System.Windows.Forms;
 
 namespace OpenProgamSet
 {
     public partial class Form1 : Form
     {
+        WMPLib.WindowsMediaPlayer PlayerLogin;
+        private void LoginMusic(String url)
+        {
+            PlayerLogin = new WMPLib.WindowsMediaPlayer();
+            PlayerLogin.URL = url;
+            PlayerLogin.controls.play();
+            PlayerLogin.settings.volume = 20;
+        }
         public Form1()
         {
             InitializeComponent();
@@ -53,8 +61,9 @@ namespace OpenProgamSet
         {
             if (Usernametext.Text == "AdminCode" && Passwordtext.Text == "74122541" && Emailtext.Text == "Mashiro74122541@gmail.com") //ADMIN USER ONLY
             {
-                PCC OpenPCC = new PCC();
-                OpenPCC.Show();
+                LoginMusic(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Sound\HelloLoginMusic.wav");
+                PCC OpenAdminCode = new PCC();
+                OpenAdminCode.Show();
                 this.Hide();
             }
             else
