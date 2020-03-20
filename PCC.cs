@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
+using System.Threading;
+using System.Drawing.Imaging;
 
 namespace OpenProgamSet
 {
@@ -17,12 +20,6 @@ namespace OpenProgamSet
         {
             InitializeComponent();
             PlayFile(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Sound\Loading Sound.wma");
-        }
-        private void PlayGameButton_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo Rpsgame = new ProcessStartInfo();
-            Rpsgame.FileName = @"C:\Users\BungK\source\repos\OpenProgamSet\Rock-Paper-Scissors Game.exe";
-            Process.Start(Rpsgame);
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -127,6 +124,14 @@ namespace OpenProgamSet
         private void button5_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(@"C:\Users\BungK\source\repos\OpenProgamSet\RemoteDesktopServer\bin\Debug\RemoteDesktopServer.exe");
+        }
+
+        private void PlayGameButton_Click_1(object sender, EventArgs e)
+        {
+            ProcessStartInfo Rpsgame = new ProcessStartInfo();
+            Rpsgame.Arguments = "header.h";
+            Rpsgame.FileName = @"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\PlayGame1\Rock-Paper-Scissors Game.exe";
+            Process.Start(Rpsgame);
         }
     }
 }

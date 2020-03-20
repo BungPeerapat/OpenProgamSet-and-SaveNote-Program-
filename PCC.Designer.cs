@@ -199,16 +199,15 @@
             // 
             this.PlayGameButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.PlayGameButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PlayGameButton.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayGameButton.Font = new System.Drawing.Font("Impact", 24F);
             this.PlayGameButton.ForeColor = System.Drawing.Color.White;
-            this.PlayGameButton.Location = new System.Drawing.Point(306, 156);
-            this.PlayGameButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PlayGameButton.Location = new System.Drawing.Point(293, 156);
             this.PlayGameButton.Name = "PlayGameButton";
-            this.PlayGameButton.Size = new System.Drawing.Size(265, 55);
-            this.PlayGameButton.TabIndex = 2;
-            this.PlayGameButton.Text = "GAME RPS";
+            this.PlayGameButton.Size = new System.Drawing.Size(253, 57);
+            this.PlayGameButton.TabIndex = 7;
+            this.PlayGameButton.Text = "Play Game";
             this.PlayGameButton.UseVisualStyleBackColor = false;
-            this.PlayGameButton.Click += new System.EventHandler(this.Button1_Click);
+            this.PlayGameButton.Click += new System.EventHandler(this.PlayGameButton_Click_1);
             // 
             // PCC
             // 
@@ -216,11 +215,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(51)))), ((int)(((byte)(61)))));
             this.ClientSize = new System.Drawing.Size(851, 551);
+            this.Controls.Add(this.PlayGameButton);
             this.Controls.Add(this.ExitPCC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Calucator);
-            this.Controls.Add(this.PlayGameButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PCC";
