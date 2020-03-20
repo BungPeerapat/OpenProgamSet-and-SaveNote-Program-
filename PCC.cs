@@ -18,6 +18,12 @@ namespace OpenProgamSet
             InitializeComponent();
             PlayFile(@"C:\Users\BungK\source\repos\OpenProgamSet\OpenProgamSet\Sound\Loading Sound.wma");
         }
+        private void PlayGameButton_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo Rpsgame = new ProcessStartInfo();
+            Rpsgame.FileName = @"C:\Users\BungK\source\repos\OpenProgamSet\Rock-Paper-Scissors Game.exe";
+            Process.Start(Rpsgame);
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
